@@ -1,0 +1,149 @@
+/* ============================================
+   Global Reset & Base Styles
+   ============================================ */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* ============================================
+   Utility: Container
+   ============================================ */
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--space-sm);
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding: 0 var(--space-md);
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 var(--space-lg);
+    }
+}
+
+/* ============================================
+   Utility: Section Label Badge
+   ============================================ */
+
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 1.25rem;
+    background-color: var(--color-primary-light);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-sm);
+}
+
+.section-label .dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+}
+
+.section-label span {
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-primary);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* ============================================
+   Utility: Section Divider
+   ============================================ */
+
+.section-divider {
+    width: 6rem;
+    height: 4px;
+    background: linear-gradient(to right, transparent, var(--color-primary), transparent);
+    border: none;
+    margin: var(--space-sm) auto;
+}
+
+/* ============================================
+   Utility: Section Header (centered)
+   ============================================ */
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-3xl);
+}
+
+.section-header h2 {
+    font-size: var(--font-size-4xl);
+    font-weight: 500;
+    color: var(--color-text);
+    max-width: 40rem;
+    margin: 0 auto var(--space-sm);
+    line-height: 1.25;
+}
+
+.section-header p {
+    color: var(--color-text-light);
+    max-width: 40rem;
+    margin: 0 auto;
+    font-size: var(--font-size-lg);
+    line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+    .section-header h2 {
+        font-size: var(--font-size-5xl);
+    }
+}
+
+/* ============================================
+   Patterns (decorative background helpers)
+   ============================================ */
+
+.pattern-dots {
+    background-image: radial-gradient(circle, rgba(139, 69, 19, 0.08) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
