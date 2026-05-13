@@ -1,6 +1,4 @@
-/* ============================================
-   Global Reset & Base Styles
-   ============================================ */
+
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -44,9 +42,7 @@ button {
     font-size: inherit;
 }
 
-/* ============================================
-   Utility: Container
-   ============================================ */
+
 
 .container {
     max-width: 1280px;
@@ -66,9 +62,7 @@ button {
     }
 }
 
-/* ============================================
-   Utility: Section Label Badge
-   ============================================ */
+
 
 .section-label {
     display: inline-flex;
@@ -95,9 +89,7 @@ button {
     text-transform: uppercase;
 }
 
-/* ============================================
-   Utility: Section Divider
-   ============================================ */
+
 
 .section-divider {
     width: 6rem;
@@ -107,9 +99,7 @@ button {
     margin: var(--space-sm) auto;
 }
 
-/* ============================================
-   Utility: Section Header (centered)
-   ============================================ */
+
 
 .section-header {
     text-align: center;
@@ -139,9 +129,7 @@ button {
     }
 }
 
-/* ============================================
-   Patterns (decorative background helpers)
-   ============================================ */
+
 
 .pattern-dots {
     background-image: radial-gradient(circle, rgba(139, 69, 19, 0.08) 1px, transparent 1px);

@@ -1,4 +1,8 @@
 <?php
-require_once '../views/layouts/header.php';
-require_once '../views/produtos.php';
-require_once '../views/layouts/footer.php';
+
+require_once '../core/bootstrap.php';
+
+$controller = new ProductController();
+$data       = $controller->listProducts();
+
+View::render('produtos', $data);

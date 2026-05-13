@@ -1,6 +1,4 @@
-/* ============================================
-   Footer
-   ============================================ */
+
 
 .footer {
     position: relative;
@@ -9,7 +7,7 @@
     overflow: hidden;
 }
 
-/* Decorative circles in background */
+
 .footer::before,
 .footer::after {
     content: '';
@@ -34,7 +32,7 @@
     border-radius: 0.5rem;
 }
 
-/* Geometric zigzag decoration at the top */
+
 .footer__decoration {
     height: 2rem;
     background: repeating-linear-gradient(
@@ -51,7 +49,7 @@
     padding: var(--space-3xl) 0 var(--space-lg);
 }
 
-/* --- Three Column Grid --- */
+
 
 .footer__grid {
     display: grid;
@@ -65,7 +63,7 @@
     }
 }
 
-/* --- Column: Brand --- */
+
 
 .footer__brand {
     display: flex;
@@ -143,7 +141,7 @@
     font-size: 0.8em;
 }
 
-/* --- Column: Navigation --- */
+
 
 .footer__nav-col h4,
 .footer__contact-col h4 {
@@ -187,7 +185,7 @@
     background-color: #fff;
 }
 
-/* --- Column: Contact --- */
+
 
 .footer__contact-col ul {
     display: flex;
@@ -212,7 +210,7 @@
     word-break: break-all;
 }
 
-/* --- Bottom Bar --- */
+
 
 .footer__bottom {
     padding-top: var(--space-lg);

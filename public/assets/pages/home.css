@@ -1,11 +1,7 @@
-/* ============================================
-   Home Page — All Sections
-   ============================================ */
 
 
-/* ============================================
-   Hero Section
-   ============================================ */
+
+
 
 .hero {
     position: relative;
@@ -21,7 +17,7 @@
     }
 }
 
-/* Background image + overlay */
+
 .hero__bg {
     position: absolute;
     inset: 0;
@@ -43,7 +39,7 @@
     );
 }
 
-/* Decorative circles */
+
 .hero__deco-circle-1 {
     position: absolute;
     top: 5rem;
@@ -64,7 +60,7 @@
     transform: rotate(45deg);
 }
 
-/* Content */
+
 .hero__content {
     position: relative;
     z-index: 10;
@@ -76,7 +72,7 @@
     max-width: 48rem;
 }
 
-/* Tag pill */
+
 .hero__tag {
     display: inline-flex;
     align-items: center;
@@ -108,7 +104,7 @@
     50%       { opacity: 0.40; }
 }
 
-/* Heading */
+
 .hero__title {
     font-size: var(--font-size-4xl);
     font-weight: 500;
@@ -135,7 +131,7 @@
     }
 }
 
-/* Paragraph */
+
 .hero__description {
     font-size: var(--font-size-lg);
     color: rgba(255, 255, 255, 0.95);
@@ -144,7 +140,7 @@
     max-width: 40rem;
 }
 
-/* Buttons */
+
 .hero__actions {
     display: flex;
     flex-direction: column;
@@ -197,7 +193,7 @@
     background-color: rgba(255, 255, 255, 0.10);
 }
 
-/* Stats bar */
+
 .hero__stats {
     display: flex;
     align-items: center;
@@ -223,9 +219,7 @@
 }
 
 
-/* ============================================
-   About Section
-   ============================================ */
+
 
 .about {
     position: relative;
@@ -234,7 +228,7 @@
     overflow: hidden;
 }
 
-/* Soft blobs */
+
 .about::before {
     content: '';
     position: absolute;
@@ -265,7 +259,7 @@
     position: relative;
 }
 
-/* Two-column layout */
+
 .about__grid {
     display: grid;
     gap: var(--space-3xl);
@@ -280,7 +274,7 @@
     }
 }
 
-/* Text side */
+
 .about__text {
     display: flex;
     flex-direction: column;
@@ -317,7 +311,7 @@
     border-top: 2px solid var(--color-primary-light);
 }
 
-/* Image side */
+
 .about__image-wrap {
     position: relative;
     order: 1;
@@ -350,7 +344,7 @@
     background: linear-gradient(to top, rgba(139, 69, 19, 0.20), transparent);
 }
 
-/* Decorative geometric accents */
+
 .about__image-deco-box {
     position: absolute;
     top: -1.5rem;
@@ -374,7 +368,7 @@
     z-index: -1;
 }
 
-/* Values grid */
+
 .about__values {
     display: grid;
     gap: var(--space-md);
@@ -464,9 +458,7 @@
 }
 
 
-/* ============================================
-   Products Section
-   ============================================ */
+
 
 .products {
     position: relative;
@@ -499,7 +491,7 @@
     filter: blur(60px);
 }
 
-/* Products grid */
+
 .products__grid {
     position: relative;
     display: grid;
@@ -519,7 +511,7 @@
     }
 }
 
-/* Product card */
+
 .product-card {
     position: relative;
     background-color: var(--color-bg-white);
@@ -645,13 +637,13 @@
     height: 1.25rem;
 }
 
-/* Bottom stripe decoration */
+
 .product-card__stripe {
     height: 4px;
     background: linear-gradient(to right, var(--color-primary), var(--color-secondary), var(--color-green));
 }
 
-/* Products CTA banner */
+
 .products__cta {
     position: relative;
     background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-green));
@@ -748,9 +740,7 @@
 }
 
 
-/* ============================================
-   Contact Section
-   ============================================ */
+
 
 .contact {
     position: relative;
@@ -785,7 +775,7 @@
     pointer-events: none;
 }
 
-/* Contact cards grid */
+
 .contact__cards {
     display: grid;
     gap: var(--space-lg);
@@ -873,7 +863,7 @@
     word-break: break-all;
 }
 
-/* Bottom accent bar */
+
 .contact-card__bar {
     position: absolute;
     bottom: 0;
@@ -894,7 +884,7 @@
     background: linear-gradient(to right, #4A7C59, #5C9A6F);
 }
 
-/* WhatsApp main CTA */
+
 .contact__cta {
     position: relative;
     background: linear-gradient(135deg, var(--color-primary), var(--color-secondary), var(--color-green));
@@ -1020,7 +1010,7 @@
     animation: pulse 2s infinite;
 }
 
-/* Business hours note */
+
 .contact__hours {
     margin-top: var(--space-lg);
     text-align: center;

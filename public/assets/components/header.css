@@ -1,6 +1,4 @@
-/* ============================================
-   Header & Navigation
-   ============================================ */
+
 
 .header {
     position: sticky;
@@ -18,7 +16,7 @@
     height: 5rem;
 }
 
-/* --- Logo --- */
+
 
 .header__logo {
     display: flex;
@@ -90,7 +88,7 @@
     margin-top: -2px;
 }
 
-/* --- Desktop Navigation --- */
+
 
 .header__nav {
     display: none;
@@ -130,7 +128,7 @@
     }
 }
 
-/* --- Mobile Menu Toggle --- */
+
 
 .header__menu-toggle {
     display: flex;
@@ -167,7 +165,7 @@
     }
 }
 
-/* --- Mobile Navigation Drawer --- */
+
 
 .header__mobile-nav {
     display: none;

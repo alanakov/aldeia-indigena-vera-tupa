@@ -1,4 +1,8 @@
 <?php
-require_once '../views/layouts/header.php';
-require_once '../views/home.php';
-require_once '../views/layouts/footer.php';
+
+require_once '../core/bootstrap.php';
+
+$controller = new HomeController();
+$data       = $controller->index();
+
+View::render('home', $data);

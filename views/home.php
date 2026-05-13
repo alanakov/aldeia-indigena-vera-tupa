@@ -1,11 +1,8 @@
 <main>
 
-    <!-- ========================================
-         Hero Section
-         ======================================== -->
+    
     <section id="home" class="hero">
 
-        <!-- Background image + overlay -->
         <div class="hero__bg">
             <img
                 src="https://images.unsplash.com/photo-1764620757878-742dc20d4e43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80"
@@ -15,34 +12,28 @@
             <div class="hero__overlay"></div>
         </div>
 
-        <!-- Decorative shapes -->
         <div class="hero__deco-circle-1"></div>
         <div class="hero__deco-circle-2"></div>
 
-        <!-- Content -->
         <div class="hero__content">
             <div class="container">
                 <div class="hero__content-inner">
 
-                    <!-- Tag pill -->
                     <div class="hero__tag">
                         <span class="dot"></span>
                         <span>Cultura · Nhandereko · Comunidade</span>
                     </div>
 
-                    <!-- Heading -->
                     <h1 class="hero__title">
                         Aldeia Verá Tupã'i – 
                         <span>Cultura Guarani Viva</span>
                     </h1>
 
-                    <!-- Description -->
                     <p class="hero__description">
                         Bem-vindo à Aldeia Verá Tupã'i, situada na comunidade rural Barreiro das Frutas em Campo Mourão (PR). Há mais de 15 anos, famílias Guarani Mbyá vivem aqui mantendo suas tradições ancestrais em harmonia com a natureza. 
                         Cada história e arte da aldeia reflete a sabedoria de nossos antepassados e conecta as raízes do nosso passado ao futuro das novas gerações.
                     </p>
 
-                    <!-- Action buttons -->
                     <div class="hero__actions">
                         <a href="#products" class="btn-hero-primary">
                             Conheça nosso artesanato
@@ -53,7 +44,6 @@
                         </a>
                     </div>
 
-                    <!-- Stats -->
                     <div class="hero__stats">
                         <div class="hero__stat">
                             <strong>22</strong>
@@ -78,14 +68,11 @@
     </section>
 
 
-    <!-- ========================================
-         About Section
-         ======================================== -->
+    
     <section id="about" class="about">
         <div class="container">
             <div class="about__inner">
 
-                <!-- Section header -->
                 <div class="section-header">
                     <div class="section-label">
                         <span class="dot"></span>
@@ -95,10 +82,8 @@
                     <hr class="section-divider">
                 </div>
 
-                <!-- Two-column content + image -->
                 <div class="about__grid">
 
-                    <!-- Text -->
                     <div class="about__text">
                         <p class="lead">
                             Nossa aldeia é um território de memória viva, onde cada dia é um elo entre
@@ -123,7 +108,6 @@
                         </p>
                     </div>
 
-                    <!-- Image -->
                     <div class="about__image-wrap">
                         <div class="about__image-frame">
                             <img
@@ -138,7 +122,6 @@
 
                 </div>
 
-                <!-- Values grid -->
                 <div class="about__values">
 
                     <div class="value-card">
@@ -173,13 +156,10 @@
     </section>
 
 
-    <!-- ========================================
-         Products Section
-         ======================================== -->
+    
     <section id="products" class="products">
         <div class="container">
 
-            <!-- Section header -->
             <div class="section-header">
                 <div class="section-label">
                     <span class="dot"></span>
@@ -197,32 +177,29 @@
                 </p>
             </div>
 
-            <!-- Products grid -->
             <div class="products__grid">
 
-                <!-- Product 1: Cesto Artesanal -->
+                <?php foreach ($products as $product) : ?>
                 <div class="product-card">
                     <div class="product-card__corner"></div>
                     <span class="product-card__badge">Artesanal</span>
                     <div class="product-card__image">
                         <img
-                            src="https://images.unsplash.com/photo-1664693592545-6d0a1c27ef68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80"
-                            alt="Cesto Artesanal"
+                            src="<?= htmlspecialchars($product['imageUrl']) ?>"
+                            alt="<?= htmlspecialchars($product['name']) ?>"
                             loading="lazy"
                         >
                         <div class="product-card__image-overlay"></div>
                     </div>
                     <div class="product-card__body">
-                        <h3>Cesto Artesanal</h3>
-                        <p>
-                            Trançado à mão com fibras naturais colhidas na estação certa. Cada cesto é único
-                            e carrega a técnica ancestral de tecelagem passada através das gerações.
-                        </p>
+                        <h3><?= htmlspecialchars($product['name']) ?></h3>
+                        <p><?= htmlspecialchars($product['description']) ?></p>
                         <a
-                            href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Cesto%20Artesanal.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20tamanhos%2C%20pre%C3%A7os%20e%20disponibilidade."
+                            href="<?= htmlspecialchars($product['whatsappUrl']) ?>"
                             target="_blank"
-                            rel="noopener"
+                            rel="noopener noreferrer"
                             class="btn-whatsapp"
+                            aria-label="Contato via WhatsApp sobre <?= htmlspecialchars($product['name']) ?>"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                             Entrar em contato
@@ -230,103 +207,10 @@
                     </div>
                     <div class="product-card__stripe"></div>
                 </div>
-
-                <!-- Product 2: Cerâmica Tradicional -->
-                <div class="product-card">
-                    <div class="product-card__corner"></div>
-                    <span class="product-card__badge">Artesanal</span>
-                    <div class="product-card__image">
-                        <img
-                            src="https://images.unsplash.com/photo-1682668701024-b6508708a764?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80"
-                            alt="Cerâmica Tradicional"
-                            loading="lazy"
-                        >
-                        <div class="product-card__image-overlay"></div>
-                    </div>
-                    <div class="product-card__body">
-                        <h3>Cerâmica Tradicional</h3>
-                        <p>
-                            Modelada e queimada artesanalmente seguindo métodos tradicionais. Cada peça
-                            representa símbolos e elementos importantes da nossa cultura.
-                        </p>
-                        <a
-                            href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Cer%C3%A2mica%20Tradicional.%20Gostaria%20de%20conhecer%20os%20modelos%20dispon%C3%ADveis%20e%20seus%20significados."
-                            target="_blank"
-                            rel="noopener"
-                            class="btn-whatsapp"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                            Entrar em contato
-                        </a>
-                    </div>
-                    <div class="product-card__stripe"></div>
-                </div>
-
-                <!-- Product 3: Tecelagem em Tear -->
-                <div class="product-card">
-                    <div class="product-card__corner"></div>
-                    <span class="product-card__badge">Artesanal</span>
-                    <div class="product-card__image">
-                        <img
-                            src="https://images.unsplash.com/photo-1759738094065-c40129ba62ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80"
-                            alt="Tecelagem em Tear"
-                            loading="lazy"
-                        >
-                        <div class="product-card__image-overlay"></div>
-                    </div>
-                    <div class="product-card__body">
-                        <h3>Tecelagem em Tear</h3>
-                        <p>
-                            Desenvolvida em tear manual com padrões geométricos tradicionais. As cores vêm
-                            de plantas e elementos naturais extraídos de forma sustentável.
-                        </p>
-                        <a
-                            href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Tecelagem%20em%20Tear.%20Gostaria%20de%20saber%20mais%20sobre%20os%20padr%C3%B5es%20e%20cores%20dispon%C3%ADveis."
-                            target="_blank"
-                            rel="noopener"
-                            class="btn-whatsapp"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                            Entrar em contato
-                        </a>
-                    </div>
-                    <div class="product-card__stripe"></div>
-                </div>
-
-                <!-- Product 4: Adornos e Colares -->
-                <div class="product-card">
-                    <div class="product-card__corner"></div>
-                    <span class="product-card__badge">Artesanal</span>
-                    <div class="product-card__image">
-                        <img
-                            src="https://images.unsplash.com/photo-1740819920986-8462590eccdb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&q=80"
-                            alt="Adornos e Colares"
-                            loading="lazy"
-                        >
-                        <div class="product-card__image-overlay"></div>
-                    </div>
-                    <div class="product-card__body">
-                        <h3>Adornos e Colares</h3>
-                        <p>
-                            Confeccionados com sementes, penas e elementos naturais. Cada adorno tem
-                            significado especial e conta uma história de nossa tradição.
-                        </p>
-                        <a
-                            href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20nos%20Adornos%20e%20Colares.%20Gostaria%20de%20conhecer%20os%20modelos%20e%20seus%20significados%20culturais."
-                            target="_blank"
-                            rel="noopener"
-                            class="btn-whatsapp"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                            Entrar em contato
-                        </a>
-                    </div>
-                    <div class="product-card__stripe"></div>
-                </div>
+                <?php endforeach; ?>
 
             </div>
 
-            <!-- View All Products Button -->
             <div class="products__view-all">
                 <a href="produtos.php" class="btn-view-all">
                     Ver todos os produtos
@@ -334,7 +218,6 @@
                 </a>
             </div>
 
-            <!-- CTA Banner -->
             <div class="products__cta">
                 <div class="products__cta-deco-1"></div>
                 <div class="products__cta-deco-2"></div>
@@ -356,13 +239,10 @@
     </section>
 
 
-    <!-- ========================================
-         Contact Section
-         ======================================== -->
+    
     <section id="contact" class="contact pattern-dots">
         <div class="container">
 
-            <!-- Section header -->
             <div class="section-header">
                 <div class="section-label">
                     <span class="dot"></span>
@@ -377,10 +257,8 @@
                 </p>
             </div>
 
-            <!-- Contact cards -->
             <div class="contact__cards">
 
-                <!-- WhatsApp -->
                 <div class="contact-card">
                     <div class="contact-card__corner"></div>
                     <div class="contact-card__icon contact-card__icon--whatsapp">💬</div>
@@ -390,7 +268,6 @@
                     <div class="contact-card__bar contact-card__bar--whatsapp"></div>
                 </div>
 
-                <!-- Email -->
                 <div class="contact-card">
                     <div class="contact-card__corner"></div>
                     <div class="contact-card__icon contact-card__icon--email">✉️</div>
@@ -400,7 +277,6 @@
                     <div class="contact-card__bar contact-card__bar--email"></div>
                 </div>
 
-                <!-- Location -->
                 <div class="contact-card">
                     <div class="contact-card__corner"></div>
                     <div class="contact-card__icon contact-card__icon--location">📍</div>
@@ -413,7 +289,6 @@
 
             </div>
 
-            <!-- WhatsApp CTA -->
             <div class="contact__cta">
                 <div class="contact__cta-deco-1"></div>
                 <div class="contact__cta-deco-2"></div>

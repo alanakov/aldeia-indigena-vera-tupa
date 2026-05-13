@@ -7,7 +7,6 @@
 
             <div class="footer__grid">
 
-                <!-- Brand Column -->
                 <div class="footer__brand">
                     <div class="footer__logo">
                         <div class="footer__logo-icon">
@@ -25,18 +24,16 @@
                     <span class="footer__badge">Feito com amor e tradição</span>
                 </div>
 
-                <!-- Navigation Column -->
                 <div class="footer__nav-col">
                     <h4>Navegação</h4>
                     <ul>
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#about">Nossa História</a></li>
-                        <li><a href="#products">Artesanato</a></li>
-                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="index.php#home">Início</a></li>
+                        <li><a href="index.php#about">Nossa História</a></li>
+                        <li><a href="index.php#products">Artesanato</a></li>
+                        <li><a href="index.php#contact">Contato</a></li>
                     </ul>
                 </div>
 
-                <!-- Contact Column -->
                 <div class="footer__contact-col">
                     <h4>Contato</h4>
                     <ul>
@@ -57,7 +54,6 @@
 
             </div>
 
-            <!-- Bottom bar -->
             <div class="footer__bottom">
                 <div class="footer__bottom-copy">
                     <p>© <?= date('Y') ?> Aldeia Indígena Verá Tupã'i. Todos os direitos reservados.</p>

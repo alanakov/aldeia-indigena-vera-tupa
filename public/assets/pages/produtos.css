@@ -1,11 +1,7 @@
-/* ============================================
-   Produtos Page
-   ============================================ */
 
 
-/* ============================================
-   "View All Products" button — used in home.php
-   ============================================ */
+
+
 
 .products__view-all {
     text-align: center;
@@ -41,9 +37,7 @@
 }
 
 
-/* ============================================
-   Page Hero — top banner for produtos.php
-   ============================================ */
+
 
 .page-hero {
     position: relative;
@@ -52,7 +46,7 @@
     overflow: hidden;
 }
 
-/* Subtle circle decorations */
+
 .page-hero::before,
 .page-hero::after {
     content: '';
@@ -135,16 +129,14 @@
 }
 
 
-/* ============================================
-   Catalog Section
-   ============================================ */
+
 
 .catalog {
     padding: var(--space-3xl) 0;
 }
 
 
-/* --- Filters bar --- */
+
 
 .catalog__filters {
     display: flex;
@@ -205,7 +197,7 @@
 }
 
 
-/* --- Products grid --- */
+
 
 .catalog__grid {
     display: grid;
@@ -225,7 +217,7 @@
     }
 }
 
-/* Price label inside product card */
+
 .product-card__price {
     font-size: var(--font-size-lg);
     font-weight: 600;
@@ -234,7 +226,7 @@
 }
 
 
-/* --- Empty state --- */
+
 
 .catalog__empty {
     text-align: center;
@@ -256,9 +248,7 @@
 }
 
 
-/* ============================================
-   Pagination
-   ============================================ */
+
 
 .pagination {
     display: flex;
